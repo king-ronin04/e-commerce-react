@@ -2,12 +2,12 @@
 
 E-commerce website using React with Add and remove cart 
 
-#INTRODUCTION
+# INTRODUCTION
 
 Nykaa is an e-commerce website that offers a wide range of beauty and wellness. The Nykaa e-commerce website is a comprehensive online platform that offers a wide range of beauty and wellness products for customers to browse, search, and purchase.  The purpose of this project was to build a website using ReactJS that would provide an engaging and user-friendly shopping experience for customers. ReactJS was chosen because of its efficient rendering and easy-to-use components, which would enable us to build a responsive and dynamic website.The website is built using ReactJS, HTML, CSS, and JavaScript, along with other libraries and tools to enhance its functionalities and user experience. The website offers various key features, including user registration and login, product browsing and filtering, product search, shopping cart, payment gateway integration, order tracking, and an admin panel for managing products and orders.
 
 
-#Technologies Used:
+# Technologies Used:
 
 The Nykaa e-commerce website was built using a combination of front-end technologies, including ReactJS, HTML, JavaScript, and several libraries and tools to enhance functionality and user experience.
 
