@@ -3,6 +3,15 @@ import { Link } from "react-router-dom";
 import { Footer, Navbar } from "../components";
 
 const Login = () => {
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const email = document.getElementById("floatingInput").value;
+    const password = document.getElementById("floatingPassword").value;
+    console.log("Email:", email);
+    console.log("Password:", password);
+  };
+
   return (
     <>
       <Navbar />
@@ -34,7 +43,7 @@ const Login = () => {
                 <p>New Here? <Link to="/register" className="text-decoration-underline text-info">Register</Link> </p>
               </div>
               <div className="text-center">
-                <button class="my-2 mx-auto btn btn-dark" type="submit" disabled>
+                <button class="my-2 mx-auto btn btn-dark" type="submit" onClick={handleSubmit}>
                   Login
                 </button>
               </div>

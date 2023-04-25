@@ -1,6 +1,17 @@
 import React from "react";
 import { Footer, Navbar } from "../components";
+
 const ContactPage = () => {
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+    console.log({
+      name: formData.get("Name"),
+      email: formData.get("Email"),
+      message: formData.get("Password"),
+    });
+  };
+
   return (
     <>
       <Navbar />
@@ -9,13 +20,14 @@ const ContactPage = () => {
         <hr />
         <div class="row my-4 h-100">
           <div className="col-md-4 col-lg-4 col-sm-8 mx-auto">
-            <form>
+            <form onSubmit={handleSubmit}>
               <div class="form my-3">
                 <label for="Name">Name</label>
                 <input
-                  type="email"
+                  type="text"
                   class="form-control"
                   id="Name"
+                  name="Name"
                   placeholder="Enter your name"
                 />
               </div>
@@ -25,6 +37,7 @@ const ContactPage = () => {
                   type="email"
                   class="form-control"
                   id="Email"
+                  name="Email"
                   placeholder="name@example.com"
                 />
               </div>
@@ -34,6 +47,7 @@ const ContactPage = () => {
                   rows={5}
                   class="form-control"
                   id="Password"
+                  name="Password"
                   placeholder="Enter your message"
                 />
               </div>
@@ -41,7 +55,6 @@ const ContactPage = () => {
                 <button
                   class="my-2 px-4 mx-auto btn btn-dark"
                   type="submit"
-                  disabled
                 >
                   Send
                 </button>
